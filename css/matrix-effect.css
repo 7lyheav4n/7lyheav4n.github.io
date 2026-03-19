@@ -1,0 +1,37 @@
+/* Matrix Rain Canvas */
+#matrix-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+/* Matrix glow effect on text */
+.matrix-glow {
+    text-shadow: 
+        0 0 10px #00FF41,
+        0 0 20px #00FF41,
+        0 0 30px #00FF41,
+        0 0 40px #00FF41;
+}
+
+/* Apply to headers */
+h1, h2, .navbar-logo {
+    text-shadow: 
+        0 0 10px #00FF41,
+        0 0 20px #00FF41;
+}
+
+/* Terminal flicker effect */
+@keyframes terminal-flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.95; }
+}
+
+body {
+    animation: terminal-flicker 0.15s infinite;
+}

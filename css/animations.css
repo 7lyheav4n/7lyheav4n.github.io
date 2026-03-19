@@ -1,0 +1,69 @@
+/* Matrix-Specific Animations */
+
+/* Matrix Glow Pulse */
+@keyframes matrix-glow {
+    0%, 100% {
+        text-shadow: 
+            0 0 10px var(--pixel-primary),
+            0 0 20px var(--pixel-primary);
+    }
+    50% {
+        text-shadow: 
+            0 0 20px var(--pixel-primary),
+            0 0 30px var(--pixel-primary),
+            0 0 40px var(--pixel-primary);
+    }
+}
+
+/* Apply to headers */
+h1 {
+    animation: matrix-glow 2s ease-in-out infinite;
+}
+
+/* Matrix Text Reveal */
+@keyframes matrix-reveal {
+    0% {
+        opacity: 0;
+        filter: blur(10px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+/* Digital Glitch */
+@keyframes digital-glitch {
+    0% {
+        transform: translate(0);
+        text-shadow: 0 0 10px var(--pixel-primary);
+    }
+    20% {
+        transform: translate(-2px, 2px);
+        text-shadow: -2px 0 var(--pixel-primary);
+    }
+    40% {
+        transform: translate(2px, -2px);
+        text-shadow: 2px 0 var(--pixel-primary);
+    }
+    60% {
+        transform: translate(-2px, -2px);
+        text-shadow: -2px 0 var(--pixel-primary);
+    }
+    80% {
+        transform: translate(2px, 2px);
+        text-shadow: 2px 0 var(--pixel-primary);
+    }
+    100% {
+        transform: translate(0);
+        text-shadow: 0 0 10px var(--pixel-primary);
+    }
+}
+
+/* Matrix Loading Dots */
+@keyframes matrix-dots {
+    0%, 20% { content: '.'; }
+    40% { content: '..'; }
+    60% { content: '...'; }
+    80%, 100% { content: ''; }
+}

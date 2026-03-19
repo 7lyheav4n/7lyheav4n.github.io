@@ -1,0 +1,71 @@
+/* Responsive Design */
+
+/* Tablet */
+@media (max-width: 768px) {
+    :root {
+        font-size: 14px;
+    }
+    
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .navbar-menu {
+        gap: var(--spacing-md);
+    }
+    
+    .hero {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    h2 {
+        font-size: 18px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    :root {
+        font-size: 12px;
+    }
+    
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+    
+    .navbar-container {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+    
+    .navbar-menu {
+        flex-direction: column;
+        width: 100%;
+        gap: var(--spacing-sm);
+    }
+    
+    .navbar-link {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .pixel-card {
+        padding: var(--spacing-md);
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+    
+    .pixel-button {
+        width: 100%;
+        text-align: center;
+    }
+}

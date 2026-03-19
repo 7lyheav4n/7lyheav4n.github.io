@@ -1,0 +1,51 @@
+/* Matrix Color Palette & Variables */
+:root {
+    /* Colors - Matrix Theme */
+    --pixel-bg-dark: #000000;           /* Pure black background */
+    --pixel-bg-medium: #000000;         /* Very dark green tint */
+    --pixel-bg-light: #003300;          /* Dark green */
+    
+    --pixel-primary: #00FF41;           /* Bright Matrix green */
+    --pixel-secondary: #008F11;         /* Dark Matrix green */
+    --pixel-accent: #00FF41;            /* Matrix green accent */
+    --pixel-success: #00FF41;           /* Matrix green */
+    --pixel-warning: #FFFF00;           /* Yellow warning */
+    --pixel-danger: #FF0000;            /* Red danger */
+    
+    --pixel-text-light: #00FF41;        /* Matrix green text */
+    --pixel-text-dark: #000000;         /* Black text */
+    --pixel-text-gray: #c1c1c1;         /* Dimmer green */
+    
+    --pixel-border: #00FF41;            /* Matrix green borders */
+    --pixel-shadow: rgba(0, 255, 65, 0.5);  /* Green shadow */
+    --pixel-highlight: #00FF41;         /* Matrix green highlight */
+    
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 48px;
+    
+    /* Pixel Grid */
+    --pixel-unit: 8px;
+    
+    /* Border */
+    --border-width: 1px;
+    --border-style: solid;
+    
+    /* Transitions */
+    --transition-fast: 0.1s;
+    --transition-medium: 0.3s;
+    --transition-slow: 0.5s;
+    
+    /* Z-index layers */
+    --z-background: -1;
+    --z-content: 1;
+    --z-navbar: 100;
+    --z-modal: 1000;
+    
+    /* Container */
+    --container-max-width: 1200px;
+}
